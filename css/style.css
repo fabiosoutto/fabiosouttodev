@@ -418,6 +418,10 @@ footer p{
 /*  ==============  conteúdo responsivo ===========  */
 
 @media screen and (max-width: 768px){
+    
+    .logo h2{
+        font-size: 22px;
+    }
     .dif-single{
         width: 100%;
         margin-bottom: 20px;
@@ -427,7 +431,7 @@ footer p{
         margin: 10px 10px;
     }
     .sobre2-img{
-        display: inline-block;
+        display: none;
     }
     .sobre2-conteudo{
         width: 100%;
@@ -457,6 +461,9 @@ footer p{
         width: 50%;
        
     }
+    .conquista-single p{
+        font-size: 11pt;
+    }
     .depoimentos-chamada h2{
         width: 500px;
     }
@@ -465,5 +472,4 @@ footer p{
     }
     footer{
         max-width: 768px;
-    }
 }
