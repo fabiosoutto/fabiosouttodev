@@ -1,0 +1,469 @@
+/*  reset padrão  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200,200,200);
+}
+
+.logo{
+    color: #16507b;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.logo h4{
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.menu{
+    width: 80%;
+    text-align: right;
+}
+
+.menu a{
+    color: #124265;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.4s;
+}
+
+.menu a:hover{
+    color: #124265;
+}
+
+/*
+.menu .btn-menu{
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+}
+
+.menu .btn-menu:hover{
+    background-color: #124265;
+    color: white;
+} 
+*/
+
+.menu-mobile{
+    display: none;
+}
+
+/*  SEÇÃO MAIN  */
+
+section.main{
+    background-image: url('../img/notebook1.jpg');
+    /*min-height: 500px;  somente no inicio para testar*/
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;  /* responsivo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* efeito Paralax  */
+}
+
+.main-cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main-cta h2{
+    color: #16507b;
+    font-size: 40px;
+}
+
+.main-cta p{
+    color: #16507b;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.main-cta button{
+    background-color: #007bff;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.main-cta button:hover{
+    background-color: #124265;
+    color: white;
+}
+
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;  /* responsivo   */
+}
+
+.dif-single{
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.dif-single img{
+    color: #124265;
+    width: 50px;
+    height: 50px;
+}
+
+.dif-single h2{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.dif-single p{
+    color: #124265;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*  ===== SEÇÃO SOBRE  =====    */
+section.sobre{
+    padding: 80px 0;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.chamada-sobre h2{
+    color: #124265;
+}
+
+.chamada-sobre p{
+    font-size: 16px;
+    color: #16507b;
+    margin-bottom: 30px;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+    color: #16507b;
+    text-align: justify;
+}
+
+section.skils{
+    width: 100%;
+}
+
+section.skils .skils-img{
+    width: 100%;                      
+    padding: 20px 20px;
+    text-align: center;
+}
+
+section.conquistas{
+    background-color: #f8fbfe;
+    padding: 8px 0;
+}
+
+.conquista-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: #124265;
+}
+
+.conquista-single img{
+    max-width: 100%;
+}
+
+/* preparando a logo para o efeito na logo */
+.conquista-single img{
+    filter: grayscale(100%);
+    transform: scale(1,1);
+    transition: 1s;
+}
+
+/*  aplicando o efeito na logo  */
+.conquista-single img:hover{
+    transform: scale(1.2,1.2);
+    filter: grayscale(0);
+}
+
+.conquista-single h2{
+    font-size: 30px;
+}
+
+/*  preparando o menu mobile para o JS   */
+.menu-itens{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-itens.show{
+    opacity: 1;
+}
+
+.menu-itens.hide{
+    opacity: 0;
+}
+
+.menu-itens a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+/*  ========== SEÇÃO SOBRE 2 =========   */
+section.sobre2{
+    padding: 40px 0;
+}
+
+.sobre2 img{
+    width: 50%;
+}
+
+.sobre2-img img{
+    max-width: 100%;
+}
+
+.sobre2-conteudo{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.sobre2-conteudo h2{
+    color: #124265;
+    margin-bottom: 20px;
+}
+
+.sobre2-conteudo p{
+    color: #16507b;
+    font-size: 16px;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+
+/* ============= SEÇÃO DE CONTATO ====== */
+
+section.contato{
+	padding: 80px 2% 2% 2%;
+	background-color: #4da2df;
+    text-align: center;
+    color: white;
+}
+
+section.contato h2{
+    color: #124265;
+}
+
+section.contato p{
+	font-size: 17px;
+	padding: 30px 0;
+	text-align: center;
+    color: #16507b
+}
+
+section.contato form{
+	max-width: 600px;
+	margin: 30px auto;
+}
+
+section.contato .input-wraper{
+	/*float: left;*/
+	padding: 10px;
+	margin-top: 7px;
+}
+
+section.contato input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 60px;
+	font-size: 16px;
+	line-height: 40px;
+	padding-left: 15px;
+}
+
+section.contato textarea{
+	font-size: 16px;
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 140px;
+	padding: 8px;
+	resize: none;
+}
+
+section.contato form .input-wraper:nth-of-type(4){
+	text-align: center;
+}
+
+section.contato input[type=submit]{
+	background-color: #007bff;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    border: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+section.contato input[type=submit]:hover{
+    background-color: #124265;
+    color: white;
+}
+
+.w100{
+	width: 100%;
+}
+
+
+/*  ======= BOTÃO VOLTAR AO TOPO  ====== */
+#btntop{
+	position: fixed;
+	bottom: 40px;
+	right: 30px;
+	height: 50px;
+	width: 50px;
+	color: #ccc;
+	background: #124265;
+	border: none;
+	border-radius: 50vh;
+	display: none;
+	scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+#btntop:hover{
+    background: #1e5a88;
+}
+
+/*===========  SEÇÃO FOOTER  =========*/
+footer{
+	margin-top: 30px;
+    margin-bottom: 30px;
+	padding: 20px 2%;
+	background: #4da2df;
+}
+
+footer p{
+    display: flex;
+	color: white;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.code-trust p{
+	align-items: center;
+}
+
+.social-icons{
+    width: 20px;
+    /*display: flex; */
+    /*flex-wrap: wrap; */
+	margin: 0 5px 0 5px; 
+}
+
+.social-icons:hover{
+	background-color: transparent;
+    transform: scale(1.2,1.2);
+}
+
+
+/*  ==============  conteúdo responsivo ===========  */
+
+@media screen and (max-width: 768px){
+    .dif-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre p{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .sobre2-img{
+        display: inline-block;
+    }
+    .sobre2-conteudo{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 50%;
+    }
+    .menu-mobile{
+        width: 50%;
+        display: block;
+        text-align: right;
+    }
+    .menu-mobile img{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .skils img{
+        width: 100%;
+    }
+    .sobre2-img{
+        width: 50%;
+       
+    }
+    .depoimentos-chamada h2{
+        width: 500px;
+    }
+    .depoimentos-chamada p{
+        width: 450px;
+    }
+    footer{
+        max-width: 768px;
+    }
+}
