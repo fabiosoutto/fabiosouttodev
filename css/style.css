@@ -14,6 +14,20 @@
     flex-wrap: wrap;
 }
 
+.center2{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.center2 h1{
+	text-align: center;
+	font-size: 17px;
+	margin: 10px 20px;
+	padding: 0 2%;
+    color: #124265;
+}
+
 header{
     background-color: white;
     padding: 20px 0;
@@ -63,7 +77,6 @@ header{
     color: white;
     border-radius: 6px;
 }
-
 .menu .btn-menu:hover{
     background-color: #124265;
     color: white;
@@ -153,7 +166,7 @@ section.main{
 
 /*  ===== SEÇÃO SOBRE  =====    */
 section.sobre{
-    padding: 30px 0;
+    padding: 10px 0;
 }
 
 .chamada-sobre{
@@ -187,6 +200,7 @@ section.sobre{
     margin-right: 2%;
     color: #16507b;
     text-align: justify;
+    padding-bottom: 20px;
 }
 
 section.skils{
@@ -209,23 +223,6 @@ section.conquistas{
     margin-right: 3%;
     text-align: center;
     color: #124265;
-}
-
-.conquista-single img{
-    max-width: 100%;
-}
-
-/* preparando a logo para o efeito na logo */
-.conquista-single img{
-    filter: grayscale(100%);
-    transform: scale(1,1);
-    transition: 1s;
-}
-
-/*  aplicando o efeito na logo  */
-.conquista-single img:hover{
-    transform: scale(1.2,1.2);
-    filter: grayscale(0);
 }
 
 .conquista-single h2{
@@ -290,11 +287,82 @@ section.sobre2{
     text-align: justify;
 }
 
+/*==============ícone circular==========*/
+/*====não esqueça de setar META fontawesome===*/
+
+.circle{
+	position: absolute;
+	left: 50%;
+	margin-top:-20px;
+	transform: translateX(-50%);
+   	width: 70px;
+  	height: 70px;
+  	text-align: center;
+  	line-height: 70px;
+  	border-radius: 50%;
+  	background-color: #ffffff;
+  	box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+}
+
+.circle i{
+	position: relative;
+	top: 5px;
+	font-size: 30px;
+	color:#1c4aa6;
+    padding-top: 20px;
+}
+
+/* ====setando tamanho das imagens do slider===*/
+
+section.clientes-slider{
+	padding: 60px 0;
+}
+
+section.clientes-slider img{
+	max-width: 100%;
+}
+
+/*===========================SLICK SLIDER============*/
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top:10px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #0c3f8a;
+	color: #0c3f8a;
+}
+
+.slick-slide:focus { outline: none; }
+
 
 /* ============= SEÇÃO DE CONTATO ====== */
 
 section.contato{
-	padding: 30px 2% 2% 2%;
+	padding: 80px 2% 2% 2%;
 	background-color: #4da2df;
     text-align: center;
     color: white;
