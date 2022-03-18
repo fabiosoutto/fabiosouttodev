@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEWHNQW0LS"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'G-NEWHNQW0LS');
-    </script>
+  gtag('config', 'G-NEWHNQW0LS');
+</script>
     <title>Fabio Soutto Dev | Desenvolvedor Web</title>
     
 </head>
@@ -40,7 +41,7 @@
             <div class="menu-mobile">
                 <img class="menu-icon" src="./img/bars-solid.svg">
                 <div class="menu-itens">
-                    <a href="#home">Home</a>                    
+                    <a href="#home">Home</a>
                     <a href="#services">Serviços</a>
                     <a href="#about">Sobre</a>
                     <a href="#contato">Contato</a>
@@ -107,17 +108,29 @@
                 <p>Sou responsável, dinâmico, criativo, organizado, com boa atitude
                      e alto nível de comunicação para realizar as tarefas. <br/>
                      Tenho iniciativa para resolver problemas com eficiência, 
-                     atingir os objetivos e apresentar as melhores soluções ao 
-                     clientes.</p>
+                     atingir os objetivos e apresentar as melhores soluções aos clientes.</p>
             </div><!--conteudo-sobre-->
         </div><!--center-->
     </section>
 
-    <section class="skils">
-        <div class="skils-img">
-            <img src="./img/skills.png">
-        </div><!--skils-img-->
-    </section><!--skils-->
+    <div class="circle"><i class="fas fa-angle-down"></i></div>
+    <section class="clientes-slider">
+
+		<div class="center2">
+			<h1>My Skills:</h1>
+		<div style="max-width: 350px;margin: 0 auto; overflow: hidden;" class="slider-container">
+			<img src="img/html-css-js-php2.jpg" />
+			<img src="img/AngularJS2.jpg" />
+			<img src="img/node-js2.jpg" />
+			<img src="img/react-js2.jpg" />
+			<img src="img/vuejs2.jpg" />
+            <img src="img/sass-less2.jpg" />
+            <img src="img/Joomla2.jpg" />
+            <img src="img/wordpress2.jpg" />
+            <img src="img/woocommerce2.jpg" />
+		</div><!--slider-container-->
+		</div><!--center2-->
+	</section>
 
 
     <section class="conquistas">
@@ -155,23 +168,11 @@
         </div><!--center-->
     </section><!--sobre2-->
 
-
-    <section class="conquistas">
-        <div class="center">
-            <div class="conquista-single" style="width: 15%;margin-right: 10%;">
-                <img src="./img/fsoutto-center-black.png" />
-            </div><!--conquista-single-->
-            <div class="conquista-single" style="width: 15%;margin-right: 10%;">
-                <img src="./img/fsoutto-center-black.png" />
-            </div><!--conquista-single-->
-            <div class="conquista-single" style="width: 15%;margin-right: 10%;">
-                <img src="./img/fsoutto-center-black.png" />
-            </div><!--conquista-single-->
-            <div class="conquista-single" style="width: 15%;margin-right: 10%;">
-                <img src="./img/fsoutto-center-black.png" />
-            </div><!--conquista-single-->
-        </div><!--center-->
-    </section><!--conquistas-->
+    <section class="skils">
+        <div class="skils-img">
+            <img src="./img/skills.png">
+        </div><!--skils-img-->
+    </section><!--skils-->
 
     <section id="contato" class="contato">
         <div class="line-titulo">
@@ -228,5 +229,28 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript">
+        $('section.clientes-slider .slider-container').slick({
+            dots: true,
+            arrows:false,
+            infinite: false,
+            speed:1000,
+            slidesToShow: 1,
+            autoplay: true,
+            centerMode:false,
+            autoplaySpeed: 3000,
+            pauseOnHover:false,
+            responsive: 
+            [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+            ]
+        });
+     </script>
 </body>
 </html>
