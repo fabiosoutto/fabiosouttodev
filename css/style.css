@@ -150,7 +150,7 @@ section.main{
 
 /*  ===== SEÇÃO SOBRE  =====    */
 section.sobre{
-    padding: 10px 0;
+    padding: 30px 0;
 }
 
 .chamada-sobre{
@@ -291,7 +291,7 @@ section.sobre2{
 /* ============= SEÇÃO DE CONTATO ====== */
 
 section.contato{
-	padding: 80px 2% 2% 2%;
+	padding: 30px 2% 2% 2%;
 	background-color: #4da2df;
     text-align: center;
     color: white;
