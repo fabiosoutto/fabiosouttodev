@@ -596,4 +596,7 @@ footer p{
     .linha{
         transform: translate(-1%);
     }
+    .main-cta h2{
+	font-size: 20px;
+    }
 }
