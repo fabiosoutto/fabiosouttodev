@@ -110,6 +110,53 @@ section.main{
     font-size: 40px;
 }
 
+/*  ===========TEXTO ANIMADO =======  */
+.linha{
+    position: relative;
+    top: 5%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid #353434;
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(-2%);
+}
+
+/*  configurando a animação  */
+
+.efeito-digitacao{
+    animation: maquinaDeEscrever 4s steps(40) 1s normal both,
+    cursorDeTexto 500ms steps(40) infinite normal;
+    animation-iteration-count: infinite;
+
+     /* Adicione caso queira que fique repetindo:
+        animation-iteration-count: infinite;
+        */  
+}
+
+@keyframes maquinaDeEscrever{
+    from {
+        width: 0;
+    }
+    to {
+        /* Aumente esse valor conforme a quantidade de caracteres
+        do texto para todo ele aparecer no efeito  */
+        width: 12em;
+    }
+}
+
+@keyframes cursorDeTexto {
+    from {
+        border-right-color: #353434;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+/*  ======FIM =======  */
+
 .main-cta p{
     color: #16507b;
     font-size: 19px;
@@ -545,4 +592,8 @@ footer p{
     }
     footer{
         max-width: 768px;
+    }
+    .linha{
+        transform: translate(-1%);
+    }
 }
