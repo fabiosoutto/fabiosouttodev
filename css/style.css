@@ -150,7 +150,7 @@ section.main{
 
 /*  ===== SEÇÃO SOBRE  =====    */
 section.sobre{
-    padding: 80px 0;
+    padding: 10px 0;
 }
 
 .chamada-sobre{
@@ -198,7 +198,7 @@ section.skils .skils-img{
 
 section.conquistas{
     background-color: #f8fbfe;
-    padding: 8px 0;
+    padding: 30px 0;
 }
 
 .conquista-single{
