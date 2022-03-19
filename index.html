@@ -31,7 +31,7 @@
                 <h4>"in code we trust"</h4>
             </div><!-- logo -->
             <div class="menu">
-                <a href="#home">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#services">Serviços</a>
                 <a href="#about">Sobre</a>
                 <a href="#contato">Contato</a>
@@ -41,7 +41,7 @@
             <div class="menu-mobile">
                 <img class="menu-icon" src="./img/bars-solid.svg">
                 <div class="menu-itens">
-                    <a href="#home">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="#services">Serviços</a>
                     <a href="#about">Sobre</a>
                     <a href="#contato">Contato</a>
@@ -103,12 +103,10 @@
             <div class="conteudo-sobre">
                 <p>Tenho habilidades com:<br />
                     HTML5 / CSS3 / JavaScript /PHP / MySQL /
-                    Node.JS / Vue.JS<br> Sass-Less / Angular.JS / React.JS -
-                    UI/UX e SEO. <br> CMS: Joomla / WordPress / WooCommerce</p>
-                <p>Sou responsável, dinâmico, criativo, organizado, com boa atitude
-                     e alto nível de comunicação para realizar as tarefas. <br/>
-                     Tenho iniciativa para resolver problemas com eficiência, 
-                     atingir os objetivos e apresentar as melhores soluções aos clientes.</p>
+                    Node.JS / Vue.JS / Sass-Less / Angular.JS / React.JS -
+                    UI/UX e SEO.<br>CMS: Joomla / WordPress / WooCommerce</p>
+
+                <p>Sou responsável, dinâmico, criativo, organizado, com boa atitude e alto nível de comunicação para realizar as tarefas.</br></br>Tenho iniciativa para resolver problemas com eficiência, atingir os objetivos e apresentar as melhores soluções aos clientes.</p>
             </div><!--conteudo-sobre-->
         </div><!--center-->
     </section>
@@ -179,21 +177,23 @@
             <div class="ln1"></div>
             <h2>Contato</h2>
             <p>Entre em contato.<br>
-            Terei o maior prazer em ajudar.<br>
-            Juntos encontraremos uma solução adequada para sua necessidade.</p>
+            Terei o maior prazer em ajudar!</p>
+            <p>Juntos encontraremos uma solução <br>adequada para sua necessidade.</p>
         </div><!--line-titulo-->
     
-        <form>
+        <form action="https://formsubmit.co/fgimenes905@gmail.com" method="POST">
             <div class="input-wraper w100">
-                <input type="text" placeholder="Nome*" required />
+                <input type="text" name="name" placeholder="Nome*" required />
             </div><!--input-wraper w100-->
     
             <div class="input-wraper w100">
-                <input type="text" placeholder="E-mail*" required />
+                <input type="text" name="email" placeholder="E-mail*" required />
             </div><!--input-wraper w50-->
     
             <div class="input-wraper w100">
-                <textarea placeholder="Sua mensagem*" required></textarea>
+                <textarea name="message" placeholder="Sua mensagem*" required></textarea>
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_next" value="https://fabiosouttodev.vercel.app/obrigado.html">
             </div><!--input-wraper w100-->
     
                 <div class="input-wraper w100">
