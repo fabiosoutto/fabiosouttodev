@@ -101,13 +101,19 @@ section.main{
 
 .main-cta{
     width: 100%;
-    margin: 60px 0;
+    margin: 20px 0;
     text-align: center;
 }
 
 .main-cta h2{
     color: #16507b;
     font-size: 40px;
+}
+
+.main-cta p{
+    color: #16507b;
+    font-size: 19px;
+    margin: 30px 0;
 }
 
 /*  ===========TEXTO ANIMADO =======  */
@@ -157,32 +163,57 @@ section.main{
 }
 /*  ======FIM =======  */
 
-.main-cta p{
-    color: #16507b;
-    font-size: 19px;
-    margin: 10px 0;
+
+/*======================SLIDER=========*/
+
+.slider{
+	position: relative;
+	width: 100%;
+	max-width: 1100px;
+	height: 450px;
+	max-height: 450px;
+	background-color: transparent;
+	margin: 0 auto;
 }
 
-.main-cta button{
-    background-color: #007bff;
-    display: inline-block;
-    padding: 8px 16px;
-    color: white;
-    border-radius: 6px;
-    font-size: 18px;
-    border: 0;
-    transition: 0.4s;
-    cursor: pointer;
+.slider img{
+	display: none;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
 }
 
-.main-cta button:hover{
-    background-color: #124265;
-    color: white;
+.bullets-nav{
+	position: absolute;
+	left: 50%;
+	bottom:10px;
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
 }
+
+.bullets-nav span{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 8px;
+	background-color: #ccc;
+	cursor: pointer;
+	margin:0 20px;
+}
+/* =====FIM DO SLIDER =====  */
+
 
 .diferenciais{
     display: flex;
     flex-wrap: wrap;  /* responsivo   */
+    padding: 30px 0;
 }
 
 .dif-single{
@@ -212,8 +243,9 @@ section.main{
 }
 
 /*  ===== SEÇÃO SOBRE  =====    */
+
 section.sobre{
-    padding: 10px 0;
+    padding: 40px 0;
 }
 
 .chamada-sobre{
