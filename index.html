@@ -54,15 +54,25 @@
         </div><!-- center -->
     </header>
 
-
     <section class="main">
         <div class="center">
             <div class="main-cta">
+
                 <h2 class="linha efeito-digitacao">Sites e Sistemas Web</h2>
                 <p>Projetos de acordo com a sua necessidade!</p>
-                <button>Saiba mais!</button>
-            </div><!--main-cta-->
 
+        <div class="banner">
+            <div id="slider1" class="slider">
+                <img src="img/slider1.jpg" />
+                <img src="img/slider2.jpg" />
+                <img src="img/slider3.jpg" />
+            <div class="bullets-nav">	
+            </div><!--bullets-nav-->
+            </div><!--slider-->
+        </div><!--banner-->
+
+            </div><!--main-cta-->
+    
             <div id="services" class="diferenciais">
 
                 <div class="dif-single">
@@ -254,6 +264,56 @@
             }
             ]
         });
+
+
+        /*  ====== SLIDER BANNER ==== */
+
+        $(function(){
+
+        var indiceAtual = 0;
+        var indiceMaximo = $('.slider img').length;
+        var delay = 5000;
+
+        initSlider();
+        cliqueSlider();
+
+        function initSlider(){
+            for(var i = 0; i < indiceMaximo; i++){
+
+            if(i == 0){
+            $('.bullets-nav').append('<span style="background:#069;"></span>');
+            }else{
+            $('.bullets-nav').append('<span></span>');
+            }
+        }
+        $('.slider img').eq(0).fadeIn();
+            setInterval(function(){
+            alternarSlider();
+            },delay);
+            }   
+
+        function cliqueSlider(){
+        $('.bullets-nav span').click(function(){
+        $('.slider img').eq(indiceAtual).stop().fadeOut(2000);
+        indiceAtual = $(this).index();
+        $('.slider img').eq(indiceAtual).stop().fadeIn(2000);
+        $('.bullets-nav span').css('background-color','#ccc');
+        $(this).css('background-color','#069');
+        });
+        }   
+
+        function alternarSlider(){
+        $('.slider img').eq(indiceAtual).stop().fadeOut(2000);
+        indiceAtual+=1;
+        if(indiceAtual == indiceMaximo)
+        indiceAtual = 0;
+        $('.bullets-nav span').css('background-color','#ccc');
+        $('.bullets-nav span').eq(indiceAtual).css('background-color','#069');
+        $('.slider img').eq(indiceAtual).stop().fadeIn(2000);
+        }
+
+        });
+
      </script>
 </body>
 </html>
