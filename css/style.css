@@ -246,7 +246,7 @@ section.sobre{
     width: 48%;
     margin-right: 2%;
     color: #16507b;
-    text-align: justify;
+    text-align: left;
     padding-bottom: 20px;
 }
 
@@ -319,7 +319,7 @@ section.sobre2{
 
 .sobre2-conteudo{
     width: 50%;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .sobre2-conteudo h2{
@@ -347,7 +347,7 @@ section.sobre2{
   	text-align: center;
   	line-height: 70px;
   	border-radius: 50%;
-  	background-color: #ffffff;
+  	background-color: #124265;
   	box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
 }
 
@@ -355,9 +355,10 @@ section.sobre2{
 	position: relative;
 	top: 5px;
 	font-size: 30px;
-	color:#1c4aa6;
+	color:#fff;
     padding-top: 20px;
 }
+
 
 /* ====setando tamanho das imagens do slider===*/
 
@@ -420,8 +421,8 @@ section.contato h2{
 }
 
 section.contato p{
-	font-size: 17px;
-	padding: 30px 0;
+	font-size: 19px;
+	padding: 10px 0;
 	text-align: center;
     color: #16507b
 }
@@ -511,7 +512,7 @@ footer{
 
 footer p{
     display: flex;
-	color: white;
+	color: #124265;
 	font-size: 14px;
 	font-style: italic;
 }
@@ -522,8 +523,6 @@ footer p{
 
 .social-icons{
     width: 20px;
-    /*display: flex; */
-    /*flex-wrap: wrap; */
 	margin: 0 5px 0 5px; 
 }
 
