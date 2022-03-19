@@ -427,6 +427,10 @@ section.contato p{
     color: #16507b
 }
 
+section.contato img{
+    padding: 20px 0;
+}
+
 section.contato form{
 	max-width: 600px;
 	margin: 30px auto;
