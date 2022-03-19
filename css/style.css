@@ -593,6 +593,9 @@ footer p{
     .depoimentos-chamada p{
         width: 450px;
     }
+    section.contato img{
+        width: 60%;
+    }
     footer{
         max-width: 768px;
     }
