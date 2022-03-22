@@ -633,6 +633,9 @@ footer p{
     section.contato img{
         width: 60%;
     }
+    section.contato p{
+	font-size: 16px;
+    }
     footer{
         max-width: 768px;
     }
