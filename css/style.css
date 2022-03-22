@@ -309,6 +309,7 @@ section.conquistas{
 }
 
 /*  preparando o menu mobile para o JS   */
+
 .menu-itens{
     position: absolute;
     left: 0;
@@ -337,6 +338,7 @@ section.conquistas{
 }
 
 /*  ========== SEÇÃO SOBRE 2 =========   */
+
 section.sobre2{
     padding: 40px 0;
 }
@@ -606,6 +608,9 @@ footer p{
         height: 30px;
         cursor: pointer;
         margin-top: 10px;
+    }
+    .slider{
+	display: none;
     }
     .skils img{
         width: 100%;
