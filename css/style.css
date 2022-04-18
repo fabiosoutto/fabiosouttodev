@@ -544,7 +544,7 @@ section.contato input[type=submit]:hover{
 footer{
 	margin-top: 30px;
         margin-bottom: 30px;
-	padding: 20px 2%;
+	padding: 10px 2%;
 	background: #4da2df;
 }
 
@@ -564,7 +564,6 @@ footer p{
 }
 
 .social-icons{
-	margin: 0 5px 0 5px;
 	display: flex;
 	padding: 10px 0;
 }
