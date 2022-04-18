@@ -564,6 +564,7 @@ footer p{
 }
 
 .social-icons{
+	width: 100px;
 	display: flex;
 	padding: 0 10px;
 }
