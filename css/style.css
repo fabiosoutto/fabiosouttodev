@@ -564,7 +564,7 @@ footer p{
 }
 
 .social-icons{
-	width: 100px;
+	width: 100%;
 	display: flex;
 	padding: 0 10px;
 }
@@ -649,5 +649,8 @@ footer p{
     }
     .main-cta h2{
 	font-size: 30px;
+    }
+    .footer{
+	display: block;    
     }
 }
