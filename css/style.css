@@ -564,13 +564,14 @@ footer p{
 }
 
 .social-icons{
-    width: 20px;
-	margin: 0 5px 0 5px; 
+    	width: 20px;
+	margin: 0 10px 0 10px;
+	display: flex;
 }
 
 .social-icons:hover{
 	background-color: transparent;
-    transform: scale(1.2,1.2);
+    	transform: scale(1.2,1.2);
 }
 
 
