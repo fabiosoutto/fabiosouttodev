@@ -543,13 +543,13 @@ section.contato input[type=submit]:hover{
 /*===========  SEÇÃO FOOTER  =========*/
 footer{
 	margin-top: 30px;
-    margin-bottom: 30px;
+        margin-bottom: 30px;
 	padding: 20px 2%;
 	background: #4da2df;
+	display: flex;
 }
 
 footer p{
-    display: flex;
 	color: #124265;
 	font-size: 14px;
 	font-style: italic;
