@@ -546,6 +546,9 @@ footer{
         margin-bottom: 30px;
 	padding: 20px 2%;
 	background: #4da2df;
+}
+
+footer .center{
 	display: flex;
 	justify-content: space-between;
 }
