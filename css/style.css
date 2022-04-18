@@ -547,6 +547,7 @@ footer{
 	padding: 20px 2%;
 	background: #4da2df;
 	display: flex;
+	justify-content: space-between;
 }
 
 footer p{
