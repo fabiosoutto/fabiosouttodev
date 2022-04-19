@@ -1,4 +1,4 @@
-/*  reset padrão  */
+﻿/*  reset padrão  */
 *{
     margin: 0;
     padding: 0;
@@ -309,7 +309,6 @@ section.conquistas{
 }
 
 /*  preparando o menu mobile para o JS   */
-
 .menu-itens{
     position: absolute;
     left: 0;
@@ -338,7 +337,6 @@ section.conquistas{
 }
 
 /*  ========== SEÇÃO SOBRE 2 =========   */
-
 section.sobre2{
     padding: 40px 0;
 }
@@ -542,18 +540,16 @@ section.contato input[type=submit]:hover{
 
 /*===========  SEÇÃO FOOTER  =========*/
 footer{
-	margin-top: 10px;
-        margin-bottom: 10px;
-	padding: 30px 5%;
+	margin-top: 5px;
+    margin-bottom: 5px;
+	padding: 20px 2%;
 	background: #4da2df;
-}
-
-footer .center{
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer p{
+    display: flex;
 	color: #124265;
 	font-size: 14px;
 	font-style: italic;
@@ -564,16 +560,13 @@ footer p{
 }
 
 .social-icons{
-	display: flex;
-}
-
-.social-icon img{
-	width: 20%;
+    width: 20px;
+	margin: 0 8px 0 8px; 
 }
 
 .social-icons:hover{
 	background-color: transparent;
-    	transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
 }
 
 
@@ -583,6 +576,9 @@ footer p{
     
     .logo h2{
         font-size: 20px;
+    }
+    .slider{
+        display: none;
     }
     .dif-single{
         width: 100%;
@@ -616,9 +612,6 @@ footer p{
         cursor: pointer;
         margin-top: 10px;
     }
-    .slider{
-	display: none;
-    }
     .skils img{
         width: 100%;
     }
@@ -641,7 +634,7 @@ footer p{
         width: 60%;
     }
     section.contato p{
-	font-size: 16px;
+    font-size: 15px;
     }
     footer{
         max-width: 768px;
@@ -651,8 +644,5 @@ footer p{
     }
     .main-cta h2{
 	font-size: 30px;
-    }
-    .footer{
-	display: block;    
     }
 }
