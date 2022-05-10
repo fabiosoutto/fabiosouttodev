@@ -66,22 +66,8 @@ header{
     color: white;
     background-color: #007bff;
     padding: 5px 5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-
-/*
-.menu .btn-menu{
-    background-color: #007bff;
-    display: inline-block;
-    padding: 8px 16px;
-    color: white;
-    border-radius: 6px;
-}
-.menu .btn-menu:hover{
-    background-color: #124265;
-    color: white;
-} 
-*/
 
 .menu-mobile{
     display: none;
@@ -209,6 +195,40 @@ section.main{
 }
 /* =====FIM DO SLIDER =====  */
 
+/* ===== PROJETOS =====  */
+
+.center .projetos{
+    display: flex;
+    flex-wrap: wrap;  /* responsivo   */
+    padding: 30px 0;
+}
+
+.proj-single{
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.proj-single video{
+    max-width: 100%;
+}
+
+.proj-single h2{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.proj-single p{
+    color: #124265;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* ======  SERVIÇOS ========= */
 
 .diferenciais{
     display: flex;
@@ -221,7 +241,7 @@ section.main{
     background-color: white;
     width: 23%;
     margin-right: 2%;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 .dif-single img{
@@ -579,6 +599,10 @@ footer p{
     }
     .slider{
         display: none;
+    }
+    .proj-single{
+        width: 100%;
+        margin-bottom: 20px;
     }
     .dif-single{
         width: 100%;
