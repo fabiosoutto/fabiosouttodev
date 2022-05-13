@@ -1,4 +1,4 @@
-﻿/*  reset padrão  */
+﻿/* ========== reset padrão ============= */
 *{
     margin: 0;
     padding: 0;
@@ -69,11 +69,8 @@ header{
     border-radius: 20px;
 }
 
-.menu-mobile{
-    display: none;
-}
 
-/*  SEÇÃO MAIN  */
+/* =================== SEÇÃO MAIN =========================== */
 
 section.main{
     background-image: url('../img/notebook1.jpg');
@@ -195,7 +192,62 @@ section.main{
 }
 /* =====FIM DO SLIDER =====  */
 
-/* ===== PROJETOS =====  */
+
+/* =============== página PROJETOS =================  */
+
+/* ==== texto animado ===== */
+h2 .text {
+    width: 600px;
+    font-size: 190px;
+    line-height: 1.86;
+    letter-spacing: -0.02em;
+    color: #0c3f8a;
+}
+
+.mask {
+    height: 156px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.mask span {    /*  aqui setei a distância  */
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 170px;
+    padding-bottom: 120px;
+    left: 320px;
+
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.mask span[data-show] {
+    transform: translateY(-100%);
+    transition: .5s transform ease-in-out;
+}
+
+.mask span:nth-child(1) {
+    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+}
+
+.mask span:nth-child(2) {
+    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+}
+
+.mask span:nth-child(3) {
+    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+}
+
+.mask span:nth-child(4) {
+    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+}
+
+/* ==== fim texto animado =====  */
 
 .center .projetos{
     display: flex;
@@ -228,7 +280,7 @@ section.main{
     line-height: 25px;
 }
 
-/* ======  SERVIÇOS ========= */
+/* ===================  SERVIÇOS ===================== */
 
 .diferenciais{
     display: flex;
@@ -262,7 +314,7 @@ section.main{
     line-height: 25px;
 }
 
-/*  ===== SEÇÃO SOBRE  =====    */
+/*  ===================== SEÇÃO SOBRE  =================    */
 
 section.sobre{
     padding: 40px 0;
@@ -356,7 +408,7 @@ section.conquistas{
     color: blue;
 }
 
-/*  ========== SEÇÃO SOBRE 2 =========   */
+/*  ================ SEÇÃO SOBRE 2 ==============   */
 section.sobre2{
     padding: 40px 0;
 }
@@ -386,7 +438,7 @@ section.sobre2{
     text-align: justify;
 }
 
-/*==============ícone circular==========*/
+/*==================ícone circular============*/
 /*====não esqueça de setar META fontawesome===*/
 
 .circle{
@@ -422,7 +474,7 @@ section.clientes-slider img{
 	max-width: 100%;
 }
 
-/*===========================SLICK SLIDER============*/
+/*===================SLICK SLIDER=================*/
 
 .slick-dotted ul{
 	list-style-type: none;
@@ -459,7 +511,7 @@ li.slick-active button{
 .slick-slide:focus { outline: none; }
 
 
-/* ============= SEÇÃO DE CONTATO ====== */
+/* ================== SEÇÃO DE CONTATO ==================== */
 
 section.contato{
 	padding: 80px 2% 2% 2%;
@@ -538,7 +590,7 @@ section.contato input[type=submit]:hover{
 }
 
 
-/*  ======= BOTÃO VOLTAR AO TOPO  ====== */
+/*  ============= BOTÃO VOLTAR AO TOPO  =========== */
 #btntop{
 	position: fixed;
 	bottom: 40px;
@@ -558,7 +610,7 @@ section.contato input[type=submit]:hover{
     background: #1e5a88;
 }
 
-/*===========  SEÇÃO FOOTER  =========*/
+/*==================  SEÇÃO FOOTER  ==============*/
 footer{
 	margin-top: 5px;
     margin-bottom: 5px;
@@ -599,6 +651,9 @@ footer p{
     }
     .slider{
         display: none;
+    }
+    .mask span {
+        left: 80px;
     }
     .proj-single{
         width: 100%;
