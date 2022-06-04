@@ -22,20 +22,25 @@
 
 .center2 h1{
 	text-align: center;
-	font-size: 17px;
+	font-size: 1.7rem;
 	margin: 10px 20px;
 	padding: 0 2%;
-    color: #124265;
+    color: #fff;
 }
 
 header{
-    background-color: white;
+    background-color: #124265;
     padding: 20px 0;
     border-bottom: 1px solid rgb(200,200,200);
 }
 
 .logo{
-    color: #16507b;
+    color: #FFF;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
 }
 
 .logo h2{
@@ -55,7 +60,7 @@ header{
 }
 
 .menu a{
-    color: #124265;
+    color: #FFF;
     font-size: 16px;
     text-decoration: none;
     margin-right: 20px;
@@ -63,8 +68,8 @@ header{
 }
 
 .menu a:hover{
-    color: white;
-    background-color: #007bff;
+    color: #124265;
+    background-color: #fff;
     padding: 5px 5px;
     border-radius: 20px;
 }
@@ -73,7 +78,7 @@ header{
 /* =================== SEÇÃO MAIN =========================== */
 
 section.main{
-    background-image: url('../img/notebook1.jpg');
+    background-image: url('../img/notebook1.png');
     /*min-height: 500px;  somente no inicio para testar*/
     padding: 70px 0;
     background-position: center;
@@ -89,14 +94,16 @@ section.main{
 }
 
 .main-cta h2{
-    color: #16507b;
+    color: #FFF;
     font-size: 40px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .main-cta p{
-    color: #16507b;
+    color: #FFF;
     font-size: 19px;
     margin: 30px 0;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /*  ===========TEXTO ANIMADO =======  */
@@ -138,7 +145,7 @@ section.main{
 
 @keyframes cursorDeTexto {
     from {
-        border-right-color: #353434;
+        border-right-color: #FFF;
     }
     to {
         border-right-color: transparent;
@@ -232,19 +239,19 @@ h2 .text {
 }
 
 .mask span:nth-child(1) {
-    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+    background-image: linear-gradient(45deg, #FFF 0%, #fff);
 }
 
 .mask span:nth-child(2) {
-    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+    background-image: linear-gradient(45deg, #fff 0%, #fff);
 }
 
 .mask span:nth-child(3) {
-    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+    background-image: linear-gradient(45deg, #fff 0%, #fff);
 }
 
 .mask span:nth-child(4) {
-    background-image: linear-gradient(45deg, #1b1661 50%, #3651d8);
+    background-image: linear-gradient(45deg, #fff 0%, #fff);
 }
 
 /* ==== fim texto animado =====  */
@@ -257,7 +264,7 @@ h2 .text {
 
 .proj-single{
     border-radius: 10px;
-    background-color: white;
+    background-color: #124265;
     width: 23%;
     margin-right: 2%;
     padding: 20px 20px;
@@ -269,13 +276,13 @@ h2 .text {
 }
 
 .proj-single h2{
-    color: #124265;
+    color: #FFF;
     margin: 10px 0;
     font-size: 16px;
 }
 
 .proj-single p{
-    color: #124265;
+    color: #FFF;
     font-size: 14px;
     line-height: 25px;
 }
@@ -290,7 +297,7 @@ h2 .text {
 
 .dif-single{
     border-radius: 10px;
-    background-color: white;
+    background-color: #124265;
     width: 23%;
     margin-right: 2%;
     padding: 20px 20px;
@@ -303,13 +310,13 @@ h2 .text {
 }
 
 .dif-single h2{
-    color: #124265;
+    color: #FFF;
     margin: 10px 0;
     font-size: 16px;
 }
 
 .dif-single p{
-    color: #124265;
+    color: #FFF;
     font-size: 14px;
     line-height: 25px;
 }
@@ -318,6 +325,7 @@ h2 .text {
 
 section.sobre{
     padding: 40px 0;
+    background-color: #124265;
 }
 
 .chamada-sobre{
@@ -326,18 +334,29 @@ section.sobre{
 }
 
 .chamada-sobre img{
-    width: 100px;
+    width: 150px;
     height: auto;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+.chamada-sobre img::before{
+    content: "";
+    inset: -15px;
+    border: 6px solid #131313;
+    border-top-color: #fff;
+    border-bottom-color: #ababab;
+    z-index: -1;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
 }
 
 .chamada-sobre h2{
-    color: #124265;
+    color: #FFF;
 }
 
 .chamada-sobre p{
     font-size: 16px;
-    color: #16507b;
+    color: #FFF;
     margin-bottom: 30px;
 }
 
@@ -349,7 +368,7 @@ section.sobre{
 .conteudo-sobre p{
     width: 48%;
     margin-right: 2%;
-    color: #16507b;
+    color: #FFF;
     text-align: left;
     padding-bottom: 20px;
 }
@@ -365,7 +384,7 @@ section.skils .skils-img{
 }
 
 section.conquistas{
-    background-color: #f8fbfe;
+    background-color: #124265;
     padding: 30px 0;
 }
 
@@ -378,6 +397,11 @@ section.conquistas{
 
 .conquista-single h2{
     font-size: 30px;
+    color: white;
+}
+
+.conquista-single p{
+    color: white;
 }
 
 /*  preparando o menu mobile para o JS   */
@@ -411,6 +435,7 @@ section.conquistas{
 /*  ================ SEÇÃO SOBRE 2 ==============   */
 section.sobre2{
     padding: 40px 0;
+    background-color: #124265;
 }
 
 .sobre2 img{
@@ -427,12 +452,12 @@ section.sobre2{
 }
 
 .sobre2-conteudo h2{
-    color: #124265;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 .sobre2-conteudo p{
-    color: #16507b;
+    color: #fff;
     font-size: 16px;
     margin-bottom: 14px;
     text-align: justify;
@@ -451,6 +476,7 @@ section.sobre2{
   	text-align: center;
   	line-height: 70px;
   	border-radius: 50%;
+    border: 1px solid #fff;
   	background-color: #124265;
   	box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
 }
@@ -458,7 +484,7 @@ section.sobre2{
 .circle i{
 	position: relative;
 	top: 5px;
-	font-size: 30px;
+	font-size: 2.5rem;
 	color:#fff;
     padding-top: 20px;
 }
@@ -468,6 +494,7 @@ section.sobre2{
 
 section.clientes-slider{
 	padding: 60px 0;
+    background-color: #124265;
 }
 
 section.clientes-slider img{
@@ -515,20 +542,20 @@ li.slick-active button{
 
 section.contato{
 	padding: 80px 2% 2% 2%;
-	background-color: #4da2df;
+	background-color: #124265;
     text-align: center;
     color: white;
 }
 
 section.contato h2{
-    color: #124265;
+    color: #fff;
 }
 
 section.contato p{
 	font-size: 19px;
 	padding: 10px 0;
 	text-align: center;
-    color: #16507b
+    color: #fff;
 }
 
 section.contato img{
@@ -553,6 +580,7 @@ section.contato input[type=text]{
 	font-size: 16px;
 	line-height: 40px;
 	padding-left: 15px;
+    border-radius: 8px;
 }
 
 section.contato textarea{
@@ -562,6 +590,7 @@ section.contato textarea{
 	height: 140px;
 	padding: 8px;
 	resize: none;
+    border-radius: 8px;
 }
 
 section.contato form .input-wraper:nth-of-type(4){
@@ -569,7 +598,7 @@ section.contato form .input-wraper:nth-of-type(4){
 }
 
 section.contato input[type=submit]{
-	background-color: #007bff;
+	background-color: #0b1720;
     display: inline-block;
     padding: 8px 16px;
     color: white;
@@ -581,8 +610,8 @@ section.contato input[type=submit]{
 }
 
 section.contato input[type=submit]:hover{
-    background-color: #124265;
-    color: white;
+    background-color: #fff;
+    color: #124265;
 }
 
 .w100{
@@ -593,36 +622,38 @@ section.contato input[type=submit]:hover{
 /*  ============= BOTÃO VOLTAR AO TOPO  =========== */
 #btntop{
 	position: fixed;
-	bottom: 40px;
-	right: 30px;
+	bottom: 55px;
+	right: 80px;
 	height: 50px;
 	width: 50px;
-	color: #ccc;
-	background: #124265;
+	color: #0b1720;
+	background: white;
 	border: none;
 	border-radius: 50vh;
 	display: none;
 	scroll-behavior: smooth;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 #btntop:hover{
-    background: #1e5a88;
+    background: #007bff;
 }
 
 /*==================  SEÇÃO FOOTER  ==============*/
 footer{
-	margin-top: 5px;
-    margin-bottom: 5px;
+    width: 100%;
+	margin-top: 1px;
+    margin-bottom: 1px;
 	padding: 20px 2%;
-	background: #4da2df;
+	background: #124265;
     display: flex;
     justify-content: space-between;
 }
 
 footer p{
     display: flex;
-	color: #124265;
+	color: #fff;
 	font-size: 14px;
 	font-style: italic;
 }
@@ -689,7 +720,15 @@ footer p{
         width: 30px;
         height: 30px;
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-right: 25px;
+    }
+    .menu-mobile a{
+        text-align: center;
+    }
+    .menu-mobile a:hover{
+        background-color: #124265;
+        color: white;
     }
     .skils img{
         width: 100%;
@@ -698,7 +737,7 @@ footer p{
         width: 50%;
     }
     .sobre2-conteudo h2{
-	font-size: 12pt;
+	    font-size: 12pt;
     }
     .conquista-single p{
         font-size: 11pt;
@@ -713,7 +752,11 @@ footer p{
         width: 60%;
     }
     section.contato p{
-    font-size: 15px;
+        font-size: 15px;
+    }
+    #btntop{
+        bottom: 120px;
+        right: 15px; 
     }
     footer{
         max-width: 768px;
@@ -722,6 +765,6 @@ footer p{
         transform: translate(-1%);
     }
     .main-cta h2{
-	font-size: 30px;
+	    font-size: 30px;
     }
 }
