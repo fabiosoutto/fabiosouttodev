@@ -656,6 +656,9 @@ footer p{
 /*  ==============  conteúdo responsivo ===========  */
 
 @media screen and (max-width: 768px){
+    .navbar-nav a:hover{
+    border-radius: 10px;
+    }	
     
     .logo9{
         max-width: 150px;
