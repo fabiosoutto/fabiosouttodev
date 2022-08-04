@@ -237,19 +237,19 @@ h2 .text {
 }
 
 .mask span:nth-child(1) {
-    background-image: linear-gradient(1deg, #FFF 0%, #fff);
+    background-image: linear-gradient(30deg, #FFF 0%, #fff 100%);
 }
 
 .mask span:nth-child(2) {
-    background-image: linear-gradient(1deg, #fff 0%, #fff);
+    background-image: linear-gradient(30deg, #fff 0%, #fff 100%);
 }
 
 .mask span:nth-child(3) {
-    background-image: linear-gradient(1deg, #fff 0%, #fff);
+    background-image: linear-gradient(30deg, #fff 0%, #fff 100%);
 }
 
 .mask span:nth-child(4) {
-    background-image: linear-gradient(1deg, #fff 0%, #fff);
+    background-image: linear-gradient(30deg, #fff 0%, #fff 100%);
 }
 
 /* ==== fim texto animado =====  */
@@ -270,6 +270,10 @@ h2 .text {
 }
 
 .proj-single video{
+    max-width: 100%;
+}
+
+.proj-single img{
     max-width: 100%;
 }
 
@@ -656,9 +660,6 @@ footer p{
 /*  ==============  conteúdo responsivo ===========  */
 
 @media screen and (max-width: 768px){
-    .navbar-nav a:hover{
-    border-radius: 10px;
-    }	
     
     .logo9{
         max-width: 150px;
