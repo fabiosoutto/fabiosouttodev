@@ -231,6 +231,8 @@ h2 .text {
     background-repeat: no-repeat;
 }
 
+/*  início texto animado span data-show */
+
 .mask span[data-show] {
     transform: translateY(-100%);
     transition: .5s transform ease-in-out;
