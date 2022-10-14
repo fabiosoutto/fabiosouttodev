@@ -1,12 +1,12 @@
 ﻿/* ========== reset padrão ============= */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.center{
+.center {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
@@ -14,58 +14,58 @@
     flex-wrap: wrap;
 }
 
-.center2{
+.center2 {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
-.center2 h1{
-	text-align: center;
-	font-size: 1.7rem;
-	margin: 10px 20px;
-	padding: 0 2%;
+.center2 h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 10px 20px;
+    padding: 0 2%;
     color: #fff;
 }
 
-header{
+header {
     background-color: #124265;
     padding: 20px 0;
-    border-bottom: 1px solid rgb(200,200,200);
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 
-.logo9{
+.logo9 {
     color: #FFF;
     width: 550px;
 }
 
-.logo9 a{
+.logo9 a {
     text-decoration: none;
     color: white;
 }
 
-.logo9 a:hover{
+.logo9 a:hover {
     color: gold;
 }
 
-.logo9 h2{
+.logo9 h2 {
     font-weight: normal;
     font-size: 24px;
 }
 
-.logo9 h4{
+.logo9 h4 {
     font-weight: normal;
     font-size: 20px;
 }
 
-/* ========== navbar ==========   */ 
+/* ========== navbar ==========   */
 
-.navbar-nav a{
+.navbar-nav a {
     color: white;
-    
+
 }
 
-.navbar-nav a:hover{
+.navbar-nav a:hover {
     color: #124265;
     background: white;
     border-radius: 25px;
@@ -75,29 +75,31 @@ header{
 
 /* =================== SEÇÃO MAIN =========================== */
 
-section.main{
+section.main {
     background-image: url('../img/notebook1.png');
     /*min-height: 500px;  somente no inicio para testar*/
     padding: 70px 0;
     background-position: center;
-    background-size: cover;  /* responsivo */
+    background-size: cover;
+    /* responsivo */
     background-repeat: no-repeat;
-    background-attachment: fixed;  /* efeito Paralax  */
+    background-attachment: fixed;
+    /* efeito Paralax  */
 }
 
-.main-cta{
+.main-cta {
     width: 100%;
     margin: 20px 0;
     text-align: center;
 }
 
-.main-cta h2{
+.main-cta h2 {
     color: #FFF;
     font-size: 40px;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.main-cta p{
+.main-cta p {
     color: #FFF;
     font-size: 19px;
     margin: 30px 0;
@@ -105,7 +107,7 @@ section.main{
 }
 
 /*  ===========TEXTO ANIMADO =======  */
-.linha{
+.linha {
     position: relative;
     top: 5%;
     width: 24em;
@@ -120,20 +122,21 @@ section.main{
 
 /*  configurando a animação  */
 
-.efeito-digitacao{
+.efeito-digitacao {
     animation: maquinaDeEscrever 4s steps(40) 1s normal both,
-    cursorDeTexto 500ms steps(40) infinite normal;
+        cursorDeTexto 500ms steps(40) infinite normal;
     animation-iteration-count: infinite;
 
-     /* Adicione caso queira que fique repetindo:
+    /* Adicione caso queira que fique repetindo:
         animation-iteration-count: infinite;
-        */  
+        */
 }
 
-@keyframes maquinaDeEscrever{
+@keyframes maquinaDeEscrever {
     from {
         width: 0;
     }
+
     to {
         /* Aumente esse valor conforme a quantidade de caracteres
         do texto para todo ele aparecer no efeito  */
@@ -145,56 +148,59 @@ section.main{
     from {
         border-right-color: #FFF;
     }
+
     to {
         border-right-color: transparent;
     }
 }
+
 /*  ======FIM =======  */
 
 
 /*======================SLIDER=========*/
 
-.slider{
-	position: relative;
-	width: 100%;
-	max-width: 1100px;
-	height: 450px;
-	max-height: 450px;
-	background-color: transparent;
-	margin: 0 auto;
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 450px;
+    max-height: 450px;
+    background-color: transparent;
+    margin: 0 auto;
 }
 
-.slider img{
-	display: none;
-	left: 50%;
-	top: 50%;
-	transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);
-	position: absolute;
-	max-width: 100%;
-	max-height: 100%;
+.slider img {
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.bullets-nav{
-	position: absolute;
-	left: 50%;
-	bottom:10px;
-	width: 100%;
-	z-index: 3;
-	text-align: center;
-	transform:translateX(-50%);
-	-ms-transform:translateX(-50%);
+.bullets-nav {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
 }
 
-.bullets-nav span{
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	border-radius: 8px;
-	background-color: #ccc;
-	cursor: pointer;
-	margin:0 20px;
+.bullets-nav span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #ccc;
+    cursor: pointer;
+    margin: 0 20px;
 }
+
 /* =====FIM DO SLIDER =====  */
 
 
@@ -216,7 +222,8 @@ h2 .text {
     margin-top: 5px;
 }
 
-.mask span {    /*  aqui setei a distância  */
+.mask span {
+    /*  aqui setei a distância  */
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -256,13 +263,14 @@ h2 .text {
 
 /* ==== fim texto animado =====  */
 
-.center .projetos{
+.center .projetos {
     display: flex;
-    flex-wrap: wrap;  /* responsivo   */
+    flex-wrap: wrap;
+    /* responsivo   */
     padding: 30px 0;
 }
 
-.proj-single{
+.proj-single {
     border-radius: 10px;
     background-color: #124265;
     width: 23%;
@@ -271,21 +279,21 @@ h2 .text {
     margin-bottom: 10px;
 }
 
-.proj-single video{
+.proj-single video {
     max-width: 100%;
 }
 
-.proj-single img{
+.proj-single img {
     max-width: 100%;
 }
 
-.proj-single h2{
+.proj-single h2 {
     color: #FFF;
     margin: 10px 0;
     font-size: 16px;
 }
 
-.proj-single p{
+.proj-single p {
     color: #FFF;
     font-size: 14px;
     line-height: 25px;
@@ -293,13 +301,14 @@ h2 .text {
 
 /* ===================  SERVIÇOS ===================== */
 
-.diferenciais{
+.diferenciais {
     display: flex;
-    flex-wrap: wrap;  /* responsivo   */
+    flex-wrap: wrap;
+    /* responsivo   */
     padding: 30px 0;
 }
 
-.dif-single{
+.dif-single {
     border-radius: 10px;
     background-color: #124265;
     width: 23%;
@@ -307,18 +316,18 @@ h2 .text {
     padding: 20px 20px;
 }
 
-.dif-single i{
+.dif-single i {
     color: white;
     font-size: 3rem;
 }
 
-.dif-single h2{
+.dif-single h2 {
     color: #FFF;
     margin: 10px 0;
     font-size: 16px;
 }
 
-.dif-single p{
+.dif-single p {
     color: #FFF;
     font-size: 14px;
     line-height: 25px;
@@ -326,23 +335,23 @@ h2 .text {
 
 /*  ===================== SEÇÃO SOBRE  =================    */
 
-section.sobre{
+section.sobre {
     padding: 40px 0;
     background-color: #124265;
 }
 
-.chamada-sobre{
+.chamada-sobre {
     width: 100%;
     text-align: center;
 }
 
-.chamada-sobre img{
+.chamada-sobre img {
     width: 150px;
     height: auto;
     border-radius: 50%;
 }
 
-.chamada-sobre img::before{
+.chamada-sobre img::before {
     content: "";
     inset: -15px;
     border: 6px solid #131313;
@@ -353,22 +362,22 @@ section.sobre{
     animation: spin 3s linear infinite;
 }
 
-.chamada-sobre h2{
+.chamada-sobre h2 {
     color: #FFF;
 }
 
-.chamada-sobre p{
+.chamada-sobre p {
     font-size: 16px;
     color: #FFF;
     margin-bottom: 30px;
 }
 
-.conteudo-sobre{
+.conteudo-sobre {
     display: flex;
     flex-wrap: wrap;
 }
 
-.conteudo-sobre p{
+.conteudo-sobre p {
     width: 48%;
     margin-right: 2%;
     color: #FFF;
@@ -376,63 +385,63 @@ section.sobre{
     padding-bottom: 5px;
 }
 
-section.skils{
+section.skils {
     width: 100%;
 }
 
-section.skils .skils-img{
-    width: 100%;                      
+section.skils .skils-img {
+    width: 100%;
     padding: 20px 20px;
     text-align: center;
 }
 
-section.conquistas{
+section.conquistas {
     background-color: #124265;
     padding: 30px 0;
 }
 
-.conquista-single{
+.conquista-single {
     width: 22%;
     margin-right: 3%;
     text-align: center;
     color: #124265;
 }
 
-.conquista-single h2{
+.conquista-single h2 {
     font-size: 30px;
     color: white;
 }
 
-.conquista-single p{
+.conquista-single p {
     color: white;
 }
 
 
 /*  ================ SEÇÃO SOBRE 2 ==============   */
-section.sobre2{
+section.sobre2 {
     padding: 40px 0;
     background-color: #124265;
 }
 
-.sobre2 img{
+.sobre2 img {
     width: 50%;
 }
 
-.sobre2-img img{
+.sobre2-img img {
     max-width: 100%;
 }
 
-.sobre2-conteudo{
+.sobre2-conteudo {
     width: 50%;
     padding: 0 30px;
 }
 
-.sobre2-conteudo h2{
+.sobre2-conteudo h2 {
     color: #fff;
     margin-bottom: 20px;
 }
 
-.sobre2-conteudo p{
+.sobre2-conteudo p {
     color: #fff;
     font-size: 16px;
     margin-bottom: 15px;
@@ -442,139 +451,141 @@ section.sobre2{
 /*==================ícone circular============*/
 /*====não esqueça de setar META fontawesome===*/
 
-.circle{
-	position: absolute;
-	left: 50%;
-	margin-top:-20px;
-	transform: translateX(-50%);
-   	width: 70px;
-  	height: 70px;
-  	text-align: center;
-  	line-height: 70px;
-  	border-radius: 50%;
+.circle {
+    position: absolute;
+    left: 50%;
+    margin-top: -20px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
     border: 1px solid #fff;
-  	background-color: #124265;
-  	box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+    background-color: #124265;
+    box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
 }
 
-.circle i{
-	position: relative;
-	top: 5px;
-	font-size: 2rem;
-	color:#fff;
+.circle i {
+    position: relative;
+    top: 5px;
+    font-size: 2rem;
+    color: #fff;
     padding-top: 20px;
 }
 
 
 /* ====setando tamanho das imagens do slider===*/
 
-section.clientes-slider{
-	padding: 60px 0;
+section.clientes-slider {
+    padding: 60px 0;
     background-color: #124265;
 }
 
-section.clientes-slider img{
-	max-width: 100%;
+section.clientes-slider img {
+    max-width: 100%;
 }
 
 /*===================SLICK SLIDER=================*/
 
-.slick-dotted ul{
-	list-style-type: none;
-	text-align: center;
-	position: relative;
-	margin-top:10px;
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
 }
 
-.slick-dotted li{
-	display: inline-block;
-	margin: 0 7px;
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
 }
 
-.slick-dotted button:focus{
-	outline: 0;
+.slick-dotted button:focus {
+    outline: 0;
 }
 
-.slick-dotted li button{
-	width: 16px;
-	height: 16px;
-	border-radius: 8px;
-	color: #d8d8d8;
-	border-width: 0;
-	background: #d8d8d8;
-	opacity: 1;
-	cursor: pointer;
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
 }
 
-li.slick-active button{
-	background: #0c3f8a;
-	color: #0c3f8a;
+li.slick-active button {
+    background: #0c3f8a;
+    color: #0c3f8a;
 }
 
-.slick-slide:focus { outline: none; }
+.slick-slide:focus {
+    outline: none;
+}
 
 
 /* ================== SEÇÃO DE CONTATO ==================== */
 
-section.contato{
-	padding: 80px 2% 2% 2%;
-	background-color: #124265;
+section.contato {
+    padding: 80px 2% 2% 2%;
+    background-color: #124265;
     text-align: center;
     color: white;
 }
 
-section.contato h2{
+section.contato h2 {
     color: #fff;
 }
 
-section.contato p{
-	font-size: 19px;
-	padding: 10px 0;
-	text-align: center;
+section.contato p {
+    font-size: 19px;
+    padding: 10px 0;
+    text-align: center;
     color: #fff;
 }
 
-section.contato img{
+section.contato img {
     padding: 20px 0;
 }
 
-section.contato form{
-	max-width: 600px;
-	margin: 30px auto;
+section.contato form {
+    max-width: 600px;
+    margin: 30px auto;
 }
 
-section.contato .input-wraper{
-	/*float: left;*/
-	padding: 10px;
-	margin-top: 7px;
+section.contato .input-wraper {
+    /*float: left;*/
+    padding: 10px;
+    margin-top: 7px;
 }
 
-section.contato input[type=text]{
-	width: 100%;
-	border: 1px solid #ccc;
-	height: 60px;
-	font-size: 16px;
-	line-height: 40px;
-	padding-left: 15px;
+section.contato input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 60px;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 15px;
     border-radius: 8px;
 }
 
-section.contato textarea{
-	font-size: 16px;
-	width: 100%;
-	border: 1px solid #ccc;
-	height: 140px;
-	padding: 8px;
-	resize: none;
+section.contato textarea {
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 140px;
+    padding: 8px;
+    resize: none;
     border-radius: 8px;
 }
 
-section.contato form .input-wraper:nth-of-type(4){
-	text-align: center;
+section.contato form .input-wraper:nth-of-type(4) {
+    text-align: center;
 }
 
-section.contato input[type=submit]{
-	background-color: #0b1720;
+section.contato input[type=submit] {
+    background-color: #0b1720;
     display: inline-block;
     padding: 8px 16px;
     color: white;
@@ -585,158 +596,206 @@ section.contato input[type=submit]{
     cursor: pointer;
 }
 
-section.contato input[type=submit]:hover{
+section.contato input[type=submit]:hover {
     background-color: #fff;
     color: #124265;
 }
 
-.w100{
-	width: 100%;
+.w100 {
+    width: 100%;
 }
 
 
 /*  ============= BOTÃO VOLTAR AO TOPO  =========== */
-#btntop9{
-	position: fixed;
-	bottom: 55px;
-	right: 80px;
-	height: 50px;
-	width: 50px;
-	color: #0b1720;
-	background: white;
-	border: none;
-	border-radius: 50vh;
-	display: none;
-	scroll-behavior: smooth;
+#btntop9 {
+    position: fixed;
+    bottom: 55px;
+    right: 80px;
+    height: 50px;
+    width: 50px;
+    color: #0b1720;
+    background: white;
+    border: none;
+    border-radius: 50vh;
+    display: none;
+    scroll-behavior: smooth;
     cursor: pointer;
     font-size: 1.5rem;
 }
 
-#btntop9:hover{
+#btntop9:hover {
     background: gold;
     color: #124265;
     transition: all 0.4s;
 }
 
+/* =======================Botão Whatsapp ========= */
+
+.zap {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 200px;
+    right: 74px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.zap i {
+    margin-top: 16px;
+}
+
+
 /*==================  SEÇÃO FOOTER  ==============*/
 
-footer{
+footer {
     width: 100%;
-	margin-top: 1px;
+    margin-top: 1px;
     margin-bottom: 1px;
-	padding: 20px 2%;
-	background: #124265;
+    padding: 20px 2%;
+    background: #124265;
     display: flex;
     justify-content: space-between;
 }
 
 
-footer p{
+footer p {
     display: flex;
-	color: #fff;
-	font-size: 14px;
-	font-style: italic;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
 }
 
-.code-trust p{
-	align-items: center;
+.code-trust p {
+    align-items: center;
 }
 
-.social-icons{
+.social-icons {
     display: inline-block;
     margin-left: 20px;
 }
 
-.social-icons i{
+.social-icons i {
     color: white;
     font-size: 1.3rem;
 }
 
-.social-icons i:hover{
+.social-icons i:hover {
     color: gold;
-	background-color: transparent;
-    transform: scale(1.2,1.2);
+    background-color: transparent;
+    transform: scale(1.2, 1.2);
 }
 
 
 /*  ==============  conteúdo responsivo ===========  */
 
-@media screen and (max-width: 768px){
-    
-    .logo9{
+@media screen and (max-width: 768px) {
+
+    .logo9 {
         max-width: 150px;
         text-align: center;
     }
-    .logo9 h2{
+
+    .logo9 h2 {
         font-size: 15px;
     }
-    .logo9 h4{
+
+    .logo9 h4 {
         font-size: 10px;
     }
-    button .navbar-toggler-icon{
+
+    button .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
-    .slider{
+
+    .slider {
         display: none;
     }
+
     .mask span {
         left: 80px;
     }
-    .proj-single{
+
+    .proj-single {
         width: 100%;
         margin-bottom: 20px;
     }
-    .dif-single{
+
+    .dif-single {
         width: 100%;
         margin-bottom: 20px;
     }
-    .conteudo-sobre p{
+
+    .conteudo-sobre p {
         width: 100%;
         margin: 10px 10px;
     }
-    .sobre2-img{
+
+    .sobre2-img {
         display: none;
     }
-    .sobre2-conteudo{
+
+    .sobre2-conteudo {
         width: 100%;
         margin: 10px 10px;
     }
-        
-    .skils img{
+
+    .skils img {
         width: 100%;
     }
-    .sobre2-img{
+
+    .sobre2-img {
         width: 50%;
     }
-    .sobre2-conteudo h2{
-	    font-size: 12pt;
+
+    .sobre2-conteudo h2 {
+        font-size: 12pt;
     }
-    .conquista-single p{
+
+    .conquista-single p {
         font-size: 11pt;
     }
-    .depoimentos-chamada h2{
+
+    .depoimentos-chamada h2 {
         width: 500px;
     }
-    .depoimentos-chamada p{
+
+    .depoimentos-chamada p {
         width: 450px;
     }
-    section.contato img{
+
+    section.contato img {
         width: 60%;
     }
-    section.contato p{
+
+    section.contato p {
         font-size: 15px;
     }
-    #btntop9{
+
+    #btntop9 {
         bottom: 120px;
-        right: 15px; 
+        right: 15px;
     }
-    footer{
+
+    footer {
         max-width: 768px;
     }
-    .linha{
+
+    .linha {
         transform: translate(-1%);
     }
-    .main-cta h2{
-	    font-size: 30px;
+
+    .main-cta h2 {
+        font-size: 30px;
+    }
+
+    .zap {
+        bottom: 200px;
+        right: 10px;
     }
 }
