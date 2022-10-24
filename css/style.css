@@ -206,62 +206,14 @@ section.main {
 
 /* =============== página PROJETOS =================  */
 
-/* ==== texto animado ===== */
-h2 .text {
+h2 #title {
     width: 600px;
-    font-size: 190px;
+    font-size: 130px;
     line-height: 1.86;
     letter-spacing: -0.02em;
     color: white;
 }
 
-.mask {
-    height: 56px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 5px;
-}
-
-.mask span {
-    /*  aqui setei a distância  */
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    top: 170px;
-    padding-bottom: 120px;
-    left: 320px;
-
-    background-size: 100% 100%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-repeat: no-repeat;
-}
-
-/*  início texto animado span data-show */
-
-.mask span[data-show] {
-    transform: translateY(-100%);
-    transition: .5s transform ease-in-out;
-}
-
-.mask span:nth-child(1) {
-    background-image: linear-gradient(30deg, #FFF 0%, #fff 100%);
-}
-
-.mask span:nth-child(2) {
-    background-image: linear-gradient(30deg, #fff 0%, #fff 100%);
-}
-
-.mask span:nth-child(3) {
-    background-image: linear-gradient(30deg, #fff 0%, #fff 100%);
-}
-
-.mask span:nth-child(4) {
-    background-image: linear-gradient(30deg, #fff 0%, #fff 100%);
-}
-
-/* ==== fim texto animado =====  */
 
 .center .projetos {
     display: flex;
@@ -300,6 +252,10 @@ h2 .text {
 }
 
 /* ===================  SERVIÇOS ===================== */
+
+#services {
+    padding: 50px 50px;
+}
 
 .diferenciais {
     display: flex;
@@ -346,7 +302,7 @@ section.sobre {
 }
 
 .chamada-sobre img {
-    width: 150px;
+    width: 190px;
     height: auto;
     border-radius: 50%;
 }
@@ -393,6 +349,11 @@ section.skils .skils-img {
     width: 100%;
     padding: 20px 20px;
     text-align: center;
+}
+
+.slider-container {
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 section.conquistas {
@@ -456,8 +417,8 @@ section.sobre2 {
     left: 50%;
     margin-top: -20px;
     transform: translateX(-50%);
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     line-height: 70px;
     border-radius: 50%;
@@ -468,7 +429,7 @@ section.sobre2 {
 
 .circle i {
     position: relative;
-    top: 5px;
+    top: -15px;
     font-size: 2rem;
     color: #fff;
     padding-top: 20px;
