@@ -6,6 +6,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.lgpd {
+    display: flex;
+    flex-wrap: wrap;
+    /* responsivo   */
+    padding: 30px 0;
+}
+
+.lgpd {
+    color: #FFF;
+}
+
 .center {
     max-width: 1100px;
     margin: 0 auto;
@@ -77,6 +88,18 @@ header {
 
 section.main {
     background-image: url('../img/notebook1.png');
+    /*min-height: 500px;  somente no inicio para testar*/
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    /* responsivo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* efeito Paralax  */
+}
+
+section.main-lgpd {
+    background-image: url('../img/notebook2.png');
     /*min-height: 500px;  somente no inicio para testar*/
     padding: 70px 0;
     background-position: center;
