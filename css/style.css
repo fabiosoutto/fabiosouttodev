@@ -432,6 +432,11 @@ section.sobre2 {
     text-align: left;
 }
 
+.btn-dark:hover {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
+
 /*==================ícone circular============*/
 /*====não esqueça de setar META fontawesome===*/
 
