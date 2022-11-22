@@ -408,12 +408,9 @@ section.sobre2 {
 }
 
 .sobre2 img {
-    width: 50%;
+    width: 100%;
 }
 
-.sobre2-img img {
-    max-width: 100%;
-}
 
 .sobre2-conteudo {
     width: 50%;
@@ -725,13 +722,19 @@ footer p {
         margin: 10px 10px;
     }
 
-    .sobre2-img {
-        display: none;
+
+    .sobre2 img {
+        width: 100%;
+    }
+
+    .sobre2-img img {
+        max-width: 100%;
+        padding: 10px 0;
     }
 
     .sobre2-conteudo {
         width: 100%;
-        margin: 10px 10px;
+        padding: 5px 20px;
     }
 
     .skils img {
